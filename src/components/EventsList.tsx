@@ -2,46 +2,74 @@ import { EventCard } from "./EventCard";
 
 const upcomingEvents = [
   {
-    name: "Sunrise Vinyasa Flow",
-    date: "March 15, 2024",
+    name: "3-Day Spiritual Yoga Awakening Meditation Retreat",
+    date: "Sept 20–22, 2025",
+    city: "De Lutte, Overijssel",
+    bookingUrl: "https://bookretreats.com/yoga-retreat-netherlands",
+    description: "A transformative 3-day journey combining spiritual yoga and meditation practices."
+  },
+  {
+    name: "3-Day Re-Connect to Your True Nature Retreat",
+    date: "September 2025",
+    city: "Huppel, Netherlands",
+    bookingUrl: "https://bookyogaretreats.com/reconnect-nature",
+    description: "Reconnect with your authentic self through nature-based yoga and mindfulness."
+  },
+  {
+    name: "4-Day Reconnect and Renew Retreat for Women",
+    date: "Starts Sept 22, 2025",
+    city: "Domburg, Netherlands",
+    bookingUrl: "https://bookyogaretreats.com/women-retreat",
+    description: "A nurturing retreat designed specifically for women to reconnect and renew."
+  },
+  {
+    name: "3-Day Yoga, Meditation & Mindfulness Retreat",
+    date: "September 2025",
+    city: "Gerkesklooster, Friesland",
+    bookingUrl: "https://bookyogaretreats.com/mindfulness-retreat",
+    description: "Immerse yourself in yoga, meditation and mindfulness in beautiful Friesland."
+  },
+  {
+    name: "3-Day Ayurveda & Yoga Weekend Retreat",
+    date: "September 2025",
+    city: "Friesland, Netherlands",
+    bookingUrl: "https://bookyogaretreats.com/ayurveda-yoga",
+    description: "Ancient Ayurvedic wisdom combined with rejuvenating yoga practices."
+  },
+  {
+    name: "Silence Retreat (5-Day)",
+    date: "Sept 19–23, 2025",
+    city: "Netherlands",
+    bookingUrl: "https://ahymsin.org/silence-retreat",
+    description: "A profound 5-day silent retreat in a former monastery setting."
+  },
+  {
+    name: "Find Your Purpose – Bhakti Retreat (3 Days)",
+    date: "Sept 26–28, 2025",
+    city: "Handel",
+    bookingUrl: "https://bookyogaretreats.com/bhakti-retreat",
+    description: "Discover your life purpose through devotional yoga and bhakti practices."
+  },
+  {
+    name: "2-Day Compassionate Communication Workshop",
+    date: "Sept 10–11, 2025",
+    city: "Netherlands",
+    bookingUrl: "https://hridaya-yoga.com/workshop",
+    description: "Learn the art of compassionate communication through mindful dialogue."
+  },
+  {
+    name: "4-Day Yoga Vipassana Retreat by DSY",
+    date: "September 2025",
+    city: "Utrecht, Netherlands",
+    bookingUrl: "https://bookretreats.com/vipassana-utrecht",
+    description: "Deep meditation practice combining yoga with Vipassana insight meditation."
+  },
+  {
+    name: "1-Week Ashtanga Primary Series Intensive",
+    date: "Sept 16–22, 2025",
     city: "Amsterdam",
-    bookingUrl: "https://example.com/sunrise-vinyasa",
-    description: "Start your day with energizing vinyasa flow as the sun rises over the city."
-  },
-  {
-    name: "Mindful Meditation Retreat",
-    date: "March 22, 2024", 
-    city: "Utrecht",
-    bookingUrl: "https://example.com/meditation-retreat",
-    description: "A full-day retreat focusing on mindfulness and inner peace."
-  },
-  {
-    name: "Yin Yoga & Sound Bath",
-    date: "March 28, 2024",
-    city: "Rotterdam",
-    bookingUrl: "https://example.com/yin-sound-bath",
-    description: "Relax deeply with gentle yin poses accompanied by healing sound vibrations."
-  },
-  {
-    name: "Breathwork & Cacao Ceremony",
-    date: "April 5, 2024",
-    city: "The Hague",
-    bookingUrl: "https://example.com/breathwork-cacao",
-    description: "Sacred breathwork session combined with ceremonial cacao for heart opening."
-  },
-  {
-    name: "Forest Yoga Experience",
-    date: "April 12, 2024",
-    city: "Arnhem",
-    bookingUrl: "https://example.com/forest-yoga",
-    description: "Connect with nature through yoga practice in the beautiful Dutch forests."
-  },
-  {
-    name: "Kundalini Awakening Workshop",
-    date: "April 18, 2024",
-    city: "Eindhoven",
-    bookingUrl: "https://example.com/kundalini-workshop",
-    description: "Awaken your inner energy through traditional Kundalini yoga practices."
+    bookingUrl: "https://davidandjelenayoga.com/ashtanga-intensive",
+    description: "Intensive week-long immersion into Ashtanga Primary Series practice."
   }
 ];
 
