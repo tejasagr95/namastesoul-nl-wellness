@@ -32,22 +32,23 @@ export const EventCard = ({ name, date, city, bookingUrl, type, duration, price,
           <span className="text-sm">{city}</span>
         </div>
 
-        <div className="space-y-2 mb-4">
-          <div className="flex justify-between text-sm">
-            <span className="text-muted-foreground">Type:</span>
-            <span className="font-medium text-foreground">{type}</span>
+        <div className="space-y-3 mb-4">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">
+              {type}
+            </span>
+            <span className="text-lg font-bold text-foreground">{price}</span>
           </div>
-          <div className="flex justify-between text-sm">
-            <span className="text-muted-foreground">Duration:</span>
-            <span className="font-medium text-foreground">{duration}</span>
-          </div>
-          <div className="flex justify-between text-sm">
-            <span className="text-muted-foreground">Price:</span>
-            <span className="font-medium text-foreground">{price}</span>
-          </div>
-          <div className="flex justify-between text-sm">
-            <span className="text-muted-foreground">Language:</span>
-            <span className="font-medium text-foreground">{language}</span>
+          
+          <div className="grid grid-cols-2 gap-2 text-sm">
+            <div>
+              <span className="text-muted-foreground">Duration:</span>
+              <div className="font-medium text-foreground">{duration}</div>
+            </div>
+            <div>
+              <span className="text-muted-foreground">Language:</span>
+              <div className="font-medium text-foreground">{language}</div>
+            </div>
           </div>
         </div>
         
