@@ -1,4 +1,6 @@
 import { EventCard } from "./EventCard";
+import { useState } from "react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const upcomingEvents = [
   {
@@ -74,6 +76,16 @@ const upcomingEvents = [
 ];
 
 export const EventsList = () => {
+  const [selectedCity, setSelectedCity] = useState<string>("all");
+  
+  // Extract unique cities for filter
+  const cities = ["all", ...Array.from(new Set(upcomingEvents.map(event => event.city)))];
+  
+  // Filter events based on selected city
+  const filteredEvents = selectedCity === "all" 
+    ? upcomingEvents 
+    : upcomingEvents.filter(event => event.city === selectedCity);
+
   return (
     <section id="events" className="py-20 bg-gradient-to-b from-background to-muted/30">
       <div className="max-w-6xl mx-auto px-6">
@@ -86,8 +98,31 @@ export const EventsList = () => {
           </p>
         </div>
         
+        {/* City Filter */}
+        <div className="flex justify-center mb-12">
+          <div className="w-64">
+            <Select value={selectedCity} onValueChange={setSelectedCity}>
+              <SelectTrigger className="w-full bg-background border-border">
+                <SelectValue placeholder="Filter by city" />
+              </SelectTrigger>
+              <SelectContent className="bg-background border-border shadow-lg z-50">
+                <SelectItem value="all" className="text-foreground hover:bg-muted">All Cities</SelectItem>
+                {cities.slice(1).map((city) => (
+                  <SelectItem 
+                    key={city} 
+                    value={city}
+                    className="text-foreground hover:bg-muted"
+                  >
+                    {city}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {upcomingEvents.map((event, index) => (
+          {filteredEvents.map((event, index) => (
             <EventCard
               key={index}
               name={event.name}
